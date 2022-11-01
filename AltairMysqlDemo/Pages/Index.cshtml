@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <h1>MultiDB. Demo: Contacts</h1>
+    <table >
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Contacts.FirstOrDefault().LastName)</th>
+                <th>@Html.DisplayNameFor(model => model.Contacts.FirstOrDefault().FirstName)</th>
+                <th>@Html.DisplayNameFor(model => model.Contacts.FirstOrDefault().EmailAddress)</th>
+                <th>@Html.DisplayNameFor(model => model.Contacts.FirstOrDefault().PhoneNumber)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Contacts)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                </td>
+            </tr>
+            }
+
+        </tbody>
+
+    </table>
+    <footer></footer>
+
+</div>
+
