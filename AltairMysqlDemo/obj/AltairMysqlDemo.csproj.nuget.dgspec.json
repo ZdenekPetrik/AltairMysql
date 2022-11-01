@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj": {}
+    "D:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj": {}
   },
   "projects": {
-    "d:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj": {
+    "D:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj",
+        "projectUniqueName": "D:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj",
         "projectName": "AltairMysqlDemo",
-        "projectPath": "d:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj",
+        "projectPath": "D:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\AltairMysqlDemo.csproj",
         "packagesPath": "C:\\Users\\petri\\.nuget\\packages\\",
-        "outputPath": "d:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\obj\\",
+        "outputPath": "D:\\Aplikace\\Git\\AltairMysql\\AltairMysqlDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "d:\\Aplikace\\Git\\AltairMysql\\AltairMysql\\AltairMysql.csproj": {
-                "projectPath": "d:\\Aplikace\\Git\\AltairMysql\\AltairMysql\\AltairMysql.csproj"
+              "D:\\Aplikace\\Git\\AltairMysql\\AltairMysql\\AltairMysql.csproj": {
+                "projectPath": "D:\\Aplikace\\Git\\AltairMysql\\AltairMysql\\AltairMysql.csproj"
               }
             }
           }
@@ -118,6 +118,10 @@
               "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
               "target": "Package",
               "version": "[5.0.17, )"
             },

@@ -7,15 +7,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using DemoDbMulti.Data;
 using Microsoft.EntityFrameworkCore;
+using DemoDbMulti.Data.SqlServer;
 
 namespace AltairMysqlDemo.Pages
 {
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly ContactsDbContext _dc;
+        private readonly SqlServerContactsDbContext _dc;
 
-        public IndexModel(ILogger<IndexModel> logger, ContactsDbContext dc)
+        public IndexModel(ILogger<IndexModel> logger, SqlServerContactsDbContext dc)
         {
             _logger = logger;
             _dc = dc;

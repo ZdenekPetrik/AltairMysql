@@ -7,7 +7,7 @@
 <div class="text-center">
 
     <h1>MultiDB. Demo: Contacts</h1>
-    <table >
+    <table>
         <thead>
             <tr>
                 <th>@Html.DisplayNameFor(model => model.Contacts.FirstOrDefault().LastName)</th>
@@ -19,20 +19,20 @@
         <tbody>
             @foreach (var item in Model.Contacts)
             {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.EmailAddress)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PhoneNumber)
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                    </td>
+                </tr>
             }
 
         </tbody>
@@ -41,4 +41,7 @@
     <footer></footer>
 
 </div>
+Uvodni migrace 
+PM> Add-Migration Initial -Context SqliteContactsDbContext -OutputDir Sqlite/Migrations
+PM> Add-Migration Initial -Context SqlServerContactsDbContext -OutputDir SqlServer/Migrations
 

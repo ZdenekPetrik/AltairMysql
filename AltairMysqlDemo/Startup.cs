@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DemoDbMulti.Data;
 using Microsoft.EntityFrameworkCore;
+using DemoDbMulti.Data.SqlServer;
 
 namespace AltairMysqlDemo
 {
@@ -26,7 +27,7 @@ namespace AltairMysqlDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddDbContext<ContactsDbContext>(options =>
+            services.AddDbContext<SqlServerContactsDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
         }
@@ -49,7 +50,7 @@ namespace AltairMysqlDemo
             {
                 var services = scope.ServiceProvider;
 
-                var context = services.GetRequiredService<ContactsDbContext>();
+                var context = services.GetRequiredService<SqlServerContactsDbContext>();
                 context.Database.EnsureCreated();
                 // DbInitializer.Initialize(context);
             }
