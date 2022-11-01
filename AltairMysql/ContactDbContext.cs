@@ -4,7 +4,7 @@ using System;
 
 namespace DemoDbMulti.Data
 {
-    public abstract class ContactsDbContext :DbContext
+    public class ContactsDbContext :DbContext
     {
         public ContactsDbContext(DbContextOptions options) : base(options) { }
         public DbSet<Contact> Contacts => this.Set<Contact>();
@@ -12,7 +12,7 @@ namespace DemoDbMulti.Data
         protected override void OnModelCreating (ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            /*
+            
             modelBuilder.Entity<Contact>().HasData(
                 new Contact { Id = 1, FirstName = "Jan", LastName = "Novák", EmailAddress = "jannovak@xxx.cz" , PhoneNumber = "+420 111 111 111" },
                 new Contact { Id = 2, FirstName = "František", LastName = "Slezák" },
@@ -21,7 +21,7 @@ namespace DemoDbMulti.Data
                 new Contact { Id = 5, FirstName = "Kamila", LastName = "Dvořáková", EmailAddress = "kamce@email.cz", PhoneNumber = "+420 123 456 789" },
                 new Contact { Id = 6, FirstName = "Nikola", LastName = "Janků", EmailAddress = "nikolka@xxx.cz" }
                 );
-            */
+            
         }
     }
   }
