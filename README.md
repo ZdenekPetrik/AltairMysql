@@ -1,2 +1,2 @@
 ahoj
- wefwefwefwf
+ja jsem zprava z GITHUBu
