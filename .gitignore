@@ -10,6 +10,12 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+AltairMysqlDemo/[Dd]ebug/
+AltairMysqlDemo/[Rr]elease/
+AltairMysqlDemo/[Bb]in/
+AltairMysqlDemo/[Oo]bj/
+AltairMysqlDemo/[Ll]og/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
