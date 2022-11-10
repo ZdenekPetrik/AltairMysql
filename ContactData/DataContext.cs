@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace ContactData
 {
-  public class DataContext : DbContext
+  public class DataContext : DbContext, IDataContext
   {
     protected readonly IConfiguration Configuration;
 

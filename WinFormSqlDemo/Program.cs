@@ -35,6 +35,7 @@ namespace WinFormSqlDemo
       return Host.CreateDefaultBuilder()
           .ConfigureServices((context, services) =>
           {
+            services.AddTransient<IDataContext, DataContext>();
             services.AddTransient<Form1>();
           });
     }
